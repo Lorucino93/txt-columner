@@ -1,0 +1,16 @@
+lineas = archivo.lineas("entrada.txt")
+listaLineas = []
+desde (i = 0; i < lista.longitud(lineas); i++)
+    listaLineas[i] = cadena.separar(lineas[i], " ")
+    escribir(listaLineas[i])
+fin
+
+archivo.eliminar("salida.txt")
+desde (i = 0; i < lista.longitud(listaLineas); i++)
+    desde (j = 0; j < lista.longitud(listaLineas[i]); j++)
+        archivo.anexar("salida.txt", listaLineas[i][j].."\t\t")
+    fin
+    archivo.anexar("salida.txt", "\n")
+fin
+
+escribir(listaLineas)
